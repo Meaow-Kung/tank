@@ -1,0 +1,88 @@
+{
+"description": "Crusader3",
+"name":"Crusader III",
+"type": "tank",
+"range": 30,
+"hitSize": 30,
+"crushDamage": 1,
+"treadPullOffset": 6,
+"singleTarget": false,
+"omniMovement": false,
+"faceTarget": false,
+"health": 1000,
+"armor": 0,
+"speed": 0.88,
+"rotateSpeed": 1.1,
+"itemCapacity": 0,
+"deathSound": "exetr2"
+"loopSoundVolume": 0.35
+"loopSound": "tt5"
+"outlineColor": "44413c",
+"treadRects": [
+    {
+	"name":"Crusader3-treads",
+      "x": 26,
+      "y": -70,
+      "width": 14,
+      "height": 140
+    }
+  ],
+
+
+"weapons": [
+    {
+      "name": "Crusader3_tour",
+      "mirror": false,
+      "top": true,
+      "x": 0,
+      "y": 1,
+      "layerOffset": 3,
+      "rotate": true,
+      "inaccuracy": 0.1,
+      "rotateSpeed": 0.65,
+      "cooldownTime": 30,
+      "shootY": 18,
+      "shootX": 1,
+
+      "reload": 200,
+      "recoil": 0,
+      "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-barrel",
+		  "x": 0,
+          "y": -1,
+          "under": true,
+          "moves": [
+            {
+              "type": "PartMove",
+              "progress": "recoil",
+              "y": -1.2
+            }
+          ]
+        }
+      ],
+      "shootSound": "wot_mid",
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "missile-large",
+        "shootEffect": "shootBig2",
+        "hitEffect": "hitBulletSmall",
+        "despawnHit": true,
+		"minPitch": 0.8,
+		"maxPitch": 0.8,
+        "lifetime": 22.85714286,
+        "damage": 100,
+        "pierceArmor": true,
+        "speed": 34,
+        "trailLength": 2,
+        "trailWidth": 0.4,
+        "width": 4,
+        "height": 9,
+        "trailColor": "edcc49",
+        "backColor": "ff7048",
+        "frontColor": "f9db62"
+      }
+    },
+  ]
+}
